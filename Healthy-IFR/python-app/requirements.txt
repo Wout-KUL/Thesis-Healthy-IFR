@@ -1,0 +1,4 @@
+pillow
+torch
+torchvision
+# flask==2.1.0

@@ -1,0 +1,33 @@
+
+.nutrientDiv {
+    width: 100%;
+    height: 30px;
+
+
+}
+.ingredientInfoScollableDiv{
+    max-height: 300px;
+    /* max-height: 1500px; */
+
+    overflow-y: scroll;
+}
+
+.div-50-height{
+    height: 50px;
+}
+.nutrient-div{
+    height: 30px;
+}
+
+.nutrientNameP{
+    width: 60%;
+    display: inline-block;
+    margin: 2px;
+    vertical-align: top;
+}
+.nutrientNumberP{
+    width: 20%;
+    display: inline-block;
+    margin: 2px;
+    vertical-align: top;
+}

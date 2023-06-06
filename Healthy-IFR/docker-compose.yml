@@ -1,0 +1,64 @@
+version: '3'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '3883:3000'
+      # - '4611:3000'
+    depends_on:
+      - mongo
+      - py-app
+    environment:
+      ROOT_URL: ${APP_ROOT_URL:-http://localhost/Healthy-IFR}
+      # ROOT_URL: http://localhost
+      MONGO_URL: mongodb://mongo:27017/meteor
+      PORT: 3000
+      restart: unless-stopped
+
+  py-app:
+    build:
+      context: ./python-app
+      dockerfile: Dockerfile
+    ports:
+      # - "4613:8000"
+      - "3884:8000"
+    depends_on:
+      - mongo
+    restart: always
+
+  mongo:
+    image: mongo:latest
+    restart: unless-stopped
+    command:
+      - --storageEngine=wiredTiger
+    volumes:
+      - data:/data/db
+    ports:
+      # - 4612:8081
+      - "3885:8080"
+
+  mongo-express:
+    image: mongo-express
+    restart: always
+    ports:
+      # - 4612:8081
+      - "3886:8081"
+
+    environment:
+      # ME_CONFIG_MONGODB_SERVER: mongodb ## 
+      # ME_CONFIG_MONGODB_ENABLE_ADMIN: true ##
+      ME_CONFIG_BASICAUTH_USERNAME: thesis-wout
+      ME_CONFIG_BASICAUTH_PASSWORD: secret-pass-thesis-wout
+      ME_CONFIG_MONGODB_ADMINUSERNAME: root
+      ME_CONFIG_MONGODB_ADMINPASSWORD: example-persfo
+
+
+# networks:
+#     bridge:
+#         driver: bridge
+
+volumes:
+  data:

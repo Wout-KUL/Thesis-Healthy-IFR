@@ -1,0 +1,27 @@
+.VergelijkContainter{
+    width: 100%;
+    vertical-align: top;
+
+
+}
+
+.receptInfo{
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+
+}
+
+.titels{
+    width: 100%;
+    vertical-align: top;
+
+
+}
+
+.titelblock{
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+
+}

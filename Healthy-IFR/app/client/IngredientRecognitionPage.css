@@ -1,0 +1,22 @@
+.IR-div-scrollable {
+    padding-bottom: 10px;
+    /* max-height: 500px; */
+    max-height: 300px;
+    overflow-y: scroll;
+}
+
+/*Added*/
+.clearfix {
+    clear: both;
+  }
+
+.clearfix:after {
+    clear: both; 
+    content: "";
+    display: table; 
+  }
+
+  .width-100{
+    width: 100%;
+
+  }

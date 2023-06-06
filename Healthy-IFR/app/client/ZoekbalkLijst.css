@@ -1,0 +1,4 @@
+.ZoekbalkLijst-div-scrollable {
+    max-height: 300px;
+    overflow-y: scroll;
+}

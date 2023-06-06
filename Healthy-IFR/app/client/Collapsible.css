@@ -1,0 +1,39 @@
+
+.collapsibleButton > p {
+    display: inline-block;
+    margin: 0;
+}
+
+.collapsibleButton > img {
+    float:right;
+    max-width:80%;
+    max-height:80%;
+    margin-right: 10px;
+    padding: 2px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 2px;
+}
+
+.collapsible {
+    margin-bottom: 5px;
+}
+
+
+.collapsibleButton {
+    background-color: rgb(196, 196, 196);
+    /* margin-bottom: 10px; */
+    text-align: left;
+    height: 40px;
+    width: 100%;
+    box-sizing: border-box;
+    /* vertical-align: center; */
+    display: inline-block;
+    padding: 10px;
+
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 5px;
+}

@@ -1,0 +1,198 @@
+.HomePage-div-scrollable {
+    padding-bottom: 10px;
+    max-height: 500px;
+
+    overflow-y: scroll;
+}
+
+.recipe-buttons-container{
+    position: relative;
+}
+
+.inline {
+    /* display: inline-block; */
+    margin-bottom: 10px;
+    
+}
+
+.imgContainter {
+    float:left; /* add this */
+
+    vertical-align: top;
+    /* display: inline-block; */
+    /* width: 120px; */
+    /* width: 30%;
+    height: 200px; */
+    width: 120px;
+    height: 120px;
+}
+
+.textContainter {
+    /* vertical-align: top; */
+    display: inline-block;
+    /* width: 120px; */
+    max-width: 40%;
+    /* height: 200px; */
+    /* margin-top: 50px; */
+    /* padding: 70px 0; */
+    /* overflow: hidden; */
+    width: 170px;
+    height: 120px;
+}
+.textContainter >p {
+    margin-top: 0px;
+}
+
+
+.full-container{
+    /* width: 100%; */
+    vertical-align: top;
+    margin-bottom: 10px;
+
+}
+
+
+.imgContainter > img {
+    /* width: 100px;
+    height: 100px; */
+    /* background-color: grey; */
+    max-width:100%;
+    /* width: 100%; */
+    max-height:100%;
+    /* margin: 10px; */
+    margin: 0;
+    position: relative;
+    top: 50%;
+    left: 43%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.Homepage-li{
+    list-style-type: none;
+    margin: 0;
+    border-bottom: #eee solid 1px;
+    margin-bottom: 10px;
+    font-size: medium;
+
+}
+
+.li-buttons{
+    display: inline-block;
+    color: white;
+    vertical-align: middle;
+}
+
+
+.li-buttons > button {
+    height: 30px;
+    width: 100px;
+    margin-right: 10px;
+  }
+
+  .li-buttons > div {
+    border-radius: 10px;
+    height: 30px;
+    width: 100px;
+  }
+
+
+
+.IngredientenTagsContainer {
+    display: flex;
+    overflow: scroll;
+    width: 100%;
+    max-width: 100%;
+    padding-left: 14px;
+    border: 1px grey solid;
+    border-radius: 5px;
+    color: black
+}
+  
+.tag {
+    display: inline-block;
+    width: -moz-fit-content;
+    width: fit-content;
+    align-items: center;
+    margin: 7px 0;
+    margin-right: 10px;
+    padding: 0 10px;
+    padding-right: 5px;
+    border-radius: 5px;
+    white-space: nowrap;
+    color: white;
+}
+  
+.tag label {
+    display: inline-block;
+    padding: 6px;
+    border: none;
+    background-color: unset;
+    cursor: pointer;
+    color: white;
+    /* border-color: orange; */
+    /* border-style: solid; */
+    border-left: gray solid 1px;
+    margin-left: 5px;
+  
+}
+
+.ingredientenlijstButton {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; /* An absolute length */
+
+  }
+
+  /* #VergelijkKnop { 
+    position: absolute; 
+    top: 91%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: block;
+    cursor: pointer; 
+} */
+#anchor{
+    width : 100%;
+}
+
+
+#VergelijkKnop { 
+    position: absolute; 
+    /* top: -3%; */
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: block;
+    cursor: pointer; 
+}
+
+
+.HomePage-red-question{
+    margin-left: 10px;
+    
+}
+
+
+
+
+@media (max-width: 480px) {
+    .imgContainter {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .textContainter {
+        width: 170px;
+        height: 120px;
+    }
+
+    .HomePage-div-scrollable {
+        max-height: 300px;
+    }
+
+  }

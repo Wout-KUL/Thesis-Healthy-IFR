@@ -1,0 +1,77 @@
+
+
+.GIP-h2 {
+    margin-left: 10px;
+}
+
+.GIP-h3 {
+    margin-left: 20px;
+}
+
+/* .GIP-second-div {
+    margin-left: 20px;
+} */
+
+.leden{
+    max-height: 400px;
+
+    overflow-y: scroll;
+    /* border-top: #eee solid 1px; */
+
+}
+
+.leden > div{
+    list-style-type: none;
+    margin: 0;
+    border-bottom: #eee solid 1px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+
+    font-size: medium;
+    padding: 10px;
+}
+
+.leden > div > p{
+    margin-left: 5px;
+    margin-right: 5px;
+
+    display: inline-block;
+}
+/* .leden > div > div > button{
+    margin-left: 5px;
+    margin-right: 5px;
+
+    display: inline-block;
+
+    background-color: #62807e;
+    border-radius:2px;
+    height: 30px;
+    width: auto;
+
+} */
+
+
+
+
+.GIP-overwrite-smallButton{
+
+    border-radius: 10px;
+    height: 30px;
+    width: auto;
+    /* margin-bottom: 10px; */
+}
+
+.ik-eet-mee{
+    margin: 0;
+    margin-left: 15px;
+    margin-bottom: 15px;
+
+}
+
+.ik-eet-mee > span{
+    font-size: x-large;
+    display: inline-block;
+    margin: 0;
+
+
+}
